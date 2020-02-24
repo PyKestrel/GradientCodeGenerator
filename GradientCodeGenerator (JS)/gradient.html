@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient Animator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="gradient.css">
+    <script src="gradient.js"></script>
+</head>
+<body class="background">
+    <div class="height">
+            <h1 class="headertext" style="padding-top: 5%;"> GRADIENT SELECTOR & ANIMATOR </h1>
+            <h3 class="headertext"> Designed By Ariel Torres </h3>
+            <br>
+    <div class="card" id="form">
+        <form onsubmit="return false">
+            <br>
+            Gradient Name<br>
+            <input type="text" style="border-radius: 30px; border-style: solid; border-width: 1px;" id="Name" value="AnimationName">
+            <br>
+            <br>
+            Select First Color!<br>
+            <input type="color" id="colorOne">
+            <br>
+            <br>
+            Select Second Color!
+            <br>
+            <input type="color" id="colorTwo">
+            <br>
+            <br>
+            Select Gradient Angle<br>
+            <input type="range" min="0" max="360" id="Angle">
+            <br>
+            <br>
+            <input type="reset">
+            <button type="button" onclick="cssGenerator();"> Get Code </button>
+            <!-- <button type="button" onclick="cssPreview();"> View </button> -->
+            
+            <br>
+            <br>
+            CSS<br>
+            <!-- <input type="text" id="output" value=" Code Will Appear Here " style="border-radius: 0 0 30px 30px; border-style: solid; border-width: 0px; width:350px; height: 200px; text-align: center;" readonly> -->
+            <textarea id="outputLabel" style="width:350px; height: 200px; border-radius: 0 0 30px 30px; border-width: 0px; text-align: center;" readonly>
+
+            </textarea>
+        </form>
+    </div>
+
+    </div>
+</body>
+</html>
